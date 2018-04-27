@@ -65,7 +65,24 @@ void checkFormulary()
 
 void AuditPrescriptionToDatabase()
 {
+    // save the prescription a file database
 
+    for(int i=0; i<prescription.size(); i++)
+    {
+        string input,morning,noon,night;
+
+        input = prescription[i].medicine_name;
+        ofstream out("output.txt");
+        out << input;
+
+        morning = integer2string(prescription[i].morning_dose);
+        noon = integer2string(prescription[i].noon_dose);
+        night = integer2string(prescription[i].night_dose);
+
+        out << morning << noon << night;
+
+        out.close();
+    }
 }
 
 int main()
