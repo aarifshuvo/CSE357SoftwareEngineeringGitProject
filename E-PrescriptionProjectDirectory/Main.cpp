@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-struct DT
+struct medicineInformation
 {
     //this is a structure to store all relevant information about the prescription and medicine and their doses!
 
@@ -9,16 +9,16 @@ struct DT
     int morning_dose, noon_dose, night_dose;
 };
 
-vector<DT> prescription;
+vector<medicineInformation> prescription;
 
 void AddMedication()
 {
     // this method takes input of medicine name and add it to the prescription
 
     cout << "Enter the name of the medicine:: ";
-    DT x;
+    medicineInformation x;
     cin>> x.medicine_name;
-    cout << "Enter doses for the prescribed medicine "
+    cout << "Enter doses for the prescribed medicine ";
          cin >> x.morning_dose >> x.noon_dose >> x.night_dose;
 
     prescription.push_back(x);
