@@ -8,6 +8,7 @@ struct medicineInformation
     string medicine_name;
     int morning_dose, noon_dose, night_dose;
 };
+//this is a vector container to store prescription data as medicineInformation structure
 
 vector<medicineInformation> prescription;
 
