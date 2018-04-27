@@ -3,6 +3,8 @@ using namespace std;
 
 struct DT
 {
+    //this is a structure to store all relevant information about the prescription and medicine and their doses!
+
     string medicine_name;
     int morning_dose, noon_dose, night_dose;
 };
@@ -11,6 +13,8 @@ vector<DT> prescription;
 
 void AddMedication()
 {
+    // this method takes input of medicine name and add it to the prescription
+
     cout << "Enter the name of the medicine:: ";
     DT x;
     cin>> x.medicine_name;
@@ -23,6 +27,8 @@ void AddMedication()
 
 void editDose()
 {
+    // this method lets the user edit the dose indications of the prescribed medicine
+
     string med_name;
     cout << "Enter the name of the medicine for changing doses:: ";
     cin>>med_name;
@@ -48,6 +54,8 @@ void editDose()
 
 void checkFormulary()
 {
+    //this method shows the formulary of the prescribed medicine
+
     cout << "Enter medicine name to check its formulary details :: ";
     string med_name;
     cout << "Enter the name of the medicine for changing doses:: ";
