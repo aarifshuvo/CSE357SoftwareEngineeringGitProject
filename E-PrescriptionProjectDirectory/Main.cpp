@@ -98,7 +98,7 @@ void AuditPrescriptionToDatabase()
     }
 }
 
-
+// function to show the interface to the users of the software
 void userInterface()
 {
     cout << "Welcome to E-Prescription Software!" << endl;
