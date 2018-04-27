@@ -93,8 +93,24 @@ void AuditPrescriptionToDatabase()
     }
 }
 
+
+void userInterface()
+{
+    cout << "Welcome to E-Prescription Software!" << endl;
+
+    cout << "Enter your choice plz:: " << endl;
+
+    cout << "1. Add medicine to the prescription" << endl;
+    cout << "2. Edit Doses of the Medicine" << endl;
+    cout << "3. Check Formulary of the Medicine" << endl;
+
+}
+
 int main()
 {
+    DT prescrip;
+
+
 
 
     return 0;
