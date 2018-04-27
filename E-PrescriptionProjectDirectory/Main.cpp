@@ -19,7 +19,11 @@ void AddMedication()
     medicineInformation x;
     cin>> x.medicine_name;
     cout << "Enter doses for the prescribed medicine ";
+<<<<<<< HEAD
          cin >> x.morning_dose >> x.noon_dose >> x.night_dose;
+=======
+    cin >> x.morning_dose >> x.noon_dose >> x.night_dose;
+>>>>>>> 41b992eb06b5bb31b7d6bf6e4bb0b6ebad8114c7
 
     prescription.push_back(x);
 }
@@ -93,9 +97,30 @@ void AuditPrescriptionToDatabase()
     }
 }
 
+
+void userInterface()
+{
+    cout << "Welcome to E-Prescription Software!" << endl;
+
+    cout << "Enter your choice plz:: " << endl;
+
+    cout << "1. Add medicine to the prescription" << endl;
+    cout << "2. Edit Doses of the Medicine" << endl;
+    cout << "3. Check Formulary of the Medicine" << endl;
+    cout << "4. Exit" << endl;
+}
+
 int main()
 {
+    userInterface();
 
+    int choice ;
+    cin>> choice;
+
+    if(choice==1) AddMedication();
+    else if(choice == 2) editDose();
+    else if(choice == 3) checkFormulary();
+    else if(choice == 4) exit(0);
 
     return 0;
 }
