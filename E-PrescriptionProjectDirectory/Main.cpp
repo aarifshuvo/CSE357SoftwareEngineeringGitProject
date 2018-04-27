@@ -18,8 +18,8 @@ void AddMedication()
     cout << "Enter the name of the medicine:: ";
     DT x;
     cin>> x.medicine_name;
-    cout << "Enter doses for the prescribed medicine "
-         cin >> x.morning_dose >> x.noon_dose >> x.night_dose;
+    cout << "Enter doses for the prescribed medicine ";
+    cin >> x.morning_dose >> x.noon_dose >> x.night_dose;
 
     prescription.push_back(x);
 }
@@ -108,17 +108,15 @@ void userInterface()
 
 int main()
 {
-    DT prescrip;
-
     userInterface();
 
     int choice ;
     cin>> choice;
 
     if(choice==1) AddMedication();
-    else if(choice == 2)
-
-
+    else if(choice == 2) editDose();
+    else if(choice == 3) checkFormulary();
+    else if(choice == 4) exit(0);
 
     return 0;
 }
