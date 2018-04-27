@@ -12,9 +12,10 @@ struct medicineInformation
 
 vector<medicineInformation> prescription;
 
+ //  method to take input of medicine name and add it to the prescription
+
 void AddMedication()
 {
-    // this method takes input of medicine name and add it to the prescription
 
     cout << "Enter the name of the medicine:: ";
     medicineInformation x;
@@ -29,10 +30,10 @@ void AddMedication()
     prescription.push_back(x);
 }
 
+// method to let the user edit the dose indications of the prescribed medicine
 
 void editDose()
 {
-    // this method lets the user edit the dose indications of the prescribed medicine
 
     string med_name;
     cout << "Enter the name of the medicine for changing doses:: ";
