@@ -15,7 +15,7 @@ void AddMedication()
     DT x;
     cin>> x.medicine_name;
     cout << "Enter doses for the prescribed medicine "
-    cin >> x.morning_dose >> x.noon_dose >> x.night_dose;
+         cin >> x.morning_dose >> x.noon_dose >> x.night_dose;
 
     prescription.push_back(x);
 }
@@ -48,7 +48,19 @@ void editDose()
 
 void checkFormulary()
 {
+    cout << "Enter medicine name to check its formulary details :: ";
+    string med_name;
+    cout << "Enter the name of the medicine for changing doses:: ";
+    cin>>med_name;
 
+    for(int i=0; i<prescription.size(); i++)
+    {
+        if(prescription[i].medicine_name == name)
+        {
+            showFormulary(name);
+            break;
+        }
+    }
 }
 
 void AuditPrescriptionToDatabase()
