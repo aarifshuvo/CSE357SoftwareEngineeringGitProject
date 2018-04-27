@@ -103,13 +103,20 @@ void userInterface()
     cout << "1. Add medicine to the prescription" << endl;
     cout << "2. Edit Doses of the Medicine" << endl;
     cout << "3. Check Formulary of the Medicine" << endl;
-
+    cout << "4. Exit" << endl;
 }
 
 int main()
 {
     DT prescrip;
 
+    userInterface();
+
+    int choice ;
+    cin>> choice;
+
+    if(choice==1) AddMedication();
+    else if(choice == 2)
 
 
 
