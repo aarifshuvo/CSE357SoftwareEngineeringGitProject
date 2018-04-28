@@ -1,4 +1,6 @@
 #include <bits/stdc++.h>
+#include<string>
+#include <iostream>
 using namespace std;
 
 struct medicineInformation
@@ -10,9 +12,26 @@ struct medicineInformation
 };
 //this is a vector container to store prescription data as medicineInformation structure
 
+string name="napa400";
 vector<medicineInformation> prescription;
 
  //  method to take input of medicine name and add it to the prescription
+
+
+
+string integer2string(int inp)
+{
+
+    stringstream ss;
+	ss << inp;
+	return ss.str();
+}
+
+
+void showFormulary(string medName)
+{
+    cout<<"No Formula found"<<endl;
+}
 
 void AddMedication()
 {
@@ -29,7 +48,6 @@ void AddMedication()
 }
 
 // method to let the user edit the dose indications of the prescribed medicine
-
 void editDose()
 {
 
