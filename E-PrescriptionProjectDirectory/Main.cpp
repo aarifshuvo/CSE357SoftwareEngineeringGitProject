@@ -21,11 +21,9 @@ void AddMedication()
     medicineInformation x;
     cin>> x.medicine_name;
     cout << "Enter doses for the prescribed medicine ";
-<<<<<<< HEAD
-         cin >> x.morning_dose >> x.noon_dose >> x.night_dose;
-=======
+
     cin >> x.morning_dose >> x.noon_dose >> x.night_dose;
->>>>>>> 41b992eb06b5bb31b7d6bf6e4bb0b6ebad8114c7
+    cin >> x.morning_dose >> x.noon_dose >> x.night_dose;
 
     prescription.push_back(x);
 }
